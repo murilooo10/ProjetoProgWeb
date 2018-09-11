@@ -5,6 +5,7 @@
     <title>Inicio</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/login.css">
+    <script type="text/javascript" src="JS/index.js"></script>
 </head>
 
 <body>
