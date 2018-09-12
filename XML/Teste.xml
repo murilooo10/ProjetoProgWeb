@@ -1,4 +1,7 @@
+<?xml version="1.0"?>
+<ArrayOfTcCompNfse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <Users> 
 	<Login>Bruno</Login>
 	<Senha>1234</Senha>
 </Users>
+</ArrayOfTcCompNfse>
