@@ -20,6 +20,22 @@ body {
 
 	padding-top: 10px;
 	text-align:  center;
-	
+	padding-right: 100px;
+	position: center;
+}
+
+#head
+{
+	background-color: blue;
+	height: 50px;
+}
+
+#pesquisa
+{
+	margin-top: 1%;
+	margin-left: 4%;
+}
+#titulo
+{
 
 }

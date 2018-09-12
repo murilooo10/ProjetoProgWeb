@@ -4,4 +4,47 @@
 	<Login>Bruno</Login>
 	<Senha>1234</Senha>
 </Users>
+<Mensagens> 
+	<MensagensEnviadas>
+		<msg> 
+			<titulo>
+				
+			</titulo>
+			<remetente>
+				
+			</remetente>
+			<corpoMensagem>
+				
+			</corpoMensagem>
+		</msg>
+		<msg> 
+			<titulo>
+				
+			</titulo>
+			<remetente>
+				
+			</remetente>
+			<corpoMensagem>
+				
+			</corpoMensagem>
+		</msg>
+		<msg> 
+			<titulo>
+				
+			</titulo>
+			<remetente>
+				
+			</remetente>
+			<corpoMensagem>
+				
+			</corpoMensagem>
+		</msg>	
+
+	</MensagensEnviadas>
+	<MensagensRecebidas>
+		
+
+	</MensagensRecebidas>
+
+</Mensagens>
 </ArrayOfTcCompNfse>
