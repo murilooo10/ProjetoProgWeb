@@ -8,43 +8,50 @@
 	<MensagensEnviadas>
 		<msg> 
 			<titulo>
-				
+				Mensagem 1
 			</titulo>
 			<remetente>
-				
+				bruno1
 			</remetente>
 			<corpoMensagem>
-				
+				mensagem1
 			</corpoMensagem>
 		</msg>
 		<msg> 
 			<titulo>
-				
+				mensagem 2
 			</titulo>
 			<remetente>
-				
+				bruno 2
 			</remetente>
 			<corpoMensagem>
-				
+				mensagem 2
 			</corpoMensagem>
 		</msg>
-		<msg> 
-			<titulo>
-				
-			</titulo>
-			<remetente>
-				
-			</remetente>
-			<corpoMensagem>
-				
-			</corpoMensagem>
-		</msg>	
-
 	</MensagensEnviadas>
 	<MensagensRecebidas>
-		
-
-	</MensagensRecebidas>
-
+		<msg> 
+			<titulo>
+				Recebida 2
+			</titulo>
+			<remetente>
+				Recebida 2
+			</remetente>
+			<corpoMensagem>
+				Recebida 2
+			</corpoMensagem>
+		</msg>
+		<msg> 
+			<titulo>
+				Recebida 3
+			</titulo>
+			<remetente>
+				Recebida 3
+			</remetente>
+			<corpoMensagem>
+				Recebida 3
+			</corpoMensagem>
+		</msg>
+	</MensagensRecebidas>	
 </Mensagens>
 </ArrayOfTcCompNfse>
