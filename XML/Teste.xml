@@ -5,30 +5,6 @@
 	<Senha>1234</Senha>
 </Users>
 <Mensagens> 
-	<MensagensEnviadas>
-		<msg> 
-			<titulo>
-				Mensagem 1
-			</titulo>
-			<remetente>
-				bruno1
-			</remetente>
-			<corpoMensagem>
-				mensagem1
-			</corpoMensagem>
-		</msg>
-		<msg> 
-			<titulo>
-				mensagem 2
-			</titulo>
-			<remetente>
-				bruno 2
-			</remetente>
-			<corpoMensagem>
-				mensagem 2
-			</corpoMensagem>
-		</msg>
-	</MensagensEnviadas>
 	<MensagensRecebidas>
 		<msg> 
 			<titulo>
@@ -51,7 +27,7 @@
 			<corpoMensagem>
 				Recebida 3
 			</corpoMensagem>
-		</msg>
+		</msg>		
 	</MensagensRecebidas>	
 </Mensagens>
 </ArrayOfTcCompNfse>
