@@ -1,4 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfTcCompNfse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <Users> 
 	<Login>Bruno</Login>
 	<Senha>1234</Senha>
 </Users>
+<Mensagens> 
+	<MensagensRecebidas>
+		<msg> 
+			<titulo>
+				Recebida 2
+			</titulo>
+			<remetente>
+				Recebida 2
+			</remetente>
+			<corpoMensagem>
+				Recebida 2
+			</corpoMensagem>
+		</msg>
+		<msg> 
+			<titulo>
+				Recebida 3
+			</titulo>
+			<remetente>
+				Recebida 3
+			</remetente>
+			<corpoMensagem>
+				Recebida 3
+			</corpoMensagem>
+		</msg>		
+	</MensagensRecebidas>	
+</Mensagens>
+</ArrayOfTcCompNfse>

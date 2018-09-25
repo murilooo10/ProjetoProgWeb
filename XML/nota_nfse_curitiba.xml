@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<ArrayOfTcCompNfse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tcCompNfse>
+    <Nfse>
+      <InfNfse>
+        <Numero>   1412    </Numero>
+        <CodigoVerificacao>2UALL60R</CodigoVerificacao>
+        <DataEmissao>2018-01-02T00:00:00</DataEmissao>
+        <IdentificacaoRps>
+          <Numero>195</Numero>
+          <Serie></Serie>
+          <Tipo>0</Tipo>
+        </IdentificacaoRps>
+        <DataEmissaoRps>2018-01-02T00:00:00</DataEmissaoRps>
+        <NaturezaOperacao>1</NaturezaOperacao>
+        <RegimeEspecialTributacao>0</RegimeEspecialTributacao>
+        <OptanteSimplesNacional>1</OptanteSimplesNacional>
+        <IncentivadorCultural>2</IncentivadorCultural>
+        <Competencia>0001-01-01T00:00:00</Competencia>
+        <NfseSubstituida>0</NfseSubstituida>
+        <Servico>
+          <Valores>
+            <ValorServicos>450.00</ValorServicos>
+            <ValorDeducoes>10.00</ValorDeducoes>
+            <ValorPis>20.00</ValorPis>
+            <ValorCofins>30.00</ValorCofins>
+            <ValorInss>40.00</ValorInss>
+            <ValorIr>50.00</ValorIr>
+            <ValorCsll>60.00</ValorCsll>
+            <IssRetido>2</IssRetido>
+            <ValorIss>22.50</ValorIss>
+            <ValorIssRetido>70.00</ValorIssRetido>
+            <OutrasRetencoes>80.00</OutrasRetencoes>
+            <BaseCalculo>450.00</BaseCalculo>
+            <Aliquota>90.05</Aliquota>
+            <ValorLiquidoNfse>450.00</ValorLiquidoNfse>
+            <DescontoIncondicionado>0.00</DescontoIncondicionado>
+            <DescontoCondicionado>0.00</DescontoCondicionado>
+          </Valores>
+          <CodigoCnae>0</CodigoCnae>
+          <Discriminacao>   ?????    </Discriminacao>
+          <CodigoMunicipio>   ?????    </CodigoMunicipio>
+        </Servico>
+        <ValorCredito>0</ValorCredito>
+        <PrestadorServico>
+          <IdentificacaoPrestador>
+            <Cnpj>   33.000.167/0001-01    </Cnpj>
+            <InscricaoMunicipal>    0.000.000-0    </InscricaoMunicipal>
+          </IdentificacaoPrestador>
+          <NomeFantasia>   Bruno asas   </NomeFantasia>
+          <Atividade>
+            <CodigoAtividade>   6209-1/00 SUPORTE TÉCNICO, MANUTENÇÃO E OUTROS SERVIÇOS EM TECNOLOGIA DA INFORMAÇÃO    </CodigoAtividade>
+            <Descricao>   - Formatação de 5 (cinco) máquinas. 
+                          - Instalação de rede dos computadores da empresa.
+             </Descricao>
+          </Atividade>
+          <Endereco>
+            <Endereco>   Rua Dona Barbara Cid    </Endereco>
+            <Numero>   151    </Numero>
+            <Complemento>   Casa    </Complemento>
+            <Bairro>   Uberaba    </Bairro>
+            <CodigoMunicipio>   Curitiba     </CodigoMunicipio>
+            <Uf>   PR    </Uf>
+            <Cep>   81.580-130    </Cep>
+          </Endereco>
+        </PrestadorServico>
+        <TomadorServico>
+          <IdentificacaoTomador>
+            <Nome>   Caroline Marceli de Souza    </Nome>
+            <CpfCnpj>   088.194.666-15    </CpfCnpj>
+          </IdentificacaoTomador>
+          <Endereco>
+            <CodigoMunicipio>   Curitiba    </CodigoMunicipio>
+            <Cep>   81580130    </Cep>
+          </Endereco>
+          <Contato>   997444145    </Contato>
+        </TomadorServico>
+      </InfNfse>
+    </Nfse>
+  </tcCompNfse>
+</ArrayOfTcCompNfse>
