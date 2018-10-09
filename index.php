@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Inicio</title>
+    <title>Index</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/login.css">
 

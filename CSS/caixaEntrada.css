@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F3F2FF;
+    margin: 0;
 }
 
 #menuLateral {
@@ -10,32 +11,47 @@ body {
     padding: 10px;
 }
 
-#linhas
-{
-	padding-top: 10px;
-	position: center;
-	padding-right: 100px;
-}
-#linhaCentro{
-
-	padding-top: 10px;
-	text-align:  center;
-	padding-right: 100px;
-	position: center;
+#linhas {
+    padding-top: 10px;
+    position: center;
+    padding-right: 100px;
 }
 
-#head
-{
-	background-color: blue;
-	height: 50px;
+#linhaCentro {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 100px;
+    position: center;
 }
 
-#pesquisa
-{
-	margin-top: 1%;
-	margin-left: 4%;
+#head {
+    background-color: blue;
+    height: 50px;
 }
-#titulo
-{
 
+#pesquisa {
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+#cabecalho {
+    background-color: #3590C4;
+    margin: none;
+    width: 100%;
+}
+
+#image_menu {
+    width: 40%;
+    margin-right: 30px;
+}
+
+#tPesquisar {
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+#tPesquisar::placeholder {
+    padding: 3px;
 }
