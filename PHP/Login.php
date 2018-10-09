@@ -14,8 +14,8 @@ $email = $_POST['email'];
 
 		
 			
-				$retorno[$j] ["Login"] = ($xml_objeto->User->Login);
-				$retorno[$j] ["Senha"] = ($xml_objeto->User->Senha);
+				$retorno[$j] ["Login"] = ($xml_objeto->Login);
+				$retorno[$j] ["Senha"] = ($xml_objeto->Senha);
 					
 		}
 
