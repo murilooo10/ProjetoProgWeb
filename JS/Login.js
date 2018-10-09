@@ -1,35 +1,24 @@
-
 $(document).ready(function(){
-
-	
-
-	$("#bLogar").click(function (){
-
-		
+	$("#bLogar").click(function (){	
 
 		$.ajax({
-
-
 		type:"POST",
 		dataType:"json",
-		url:"PHP/index.php",
+		url:"PHP/Login.php",
 		data:{email:$("#tLogin").val(),senha:$("#tPassword").val()},
 		success:function(retorno)
 		{
+			
 			console.log(retorno);
+		
 			if (retorno == "valido")
 			{
-				window.location.href="paginas/CaixaEntrada.html";
+				window.location.href="paginas/CaixaEntrada.html?usuario=";
 			}
-			else if(retorno == "Preencher_campos")
+			else 
 			{
-				alert("Preencher todos os campos");
-				
-			}else{
-				alert("Login ou senha inválidos");
+				alert("Usuario errado");
 			}
-
-
 		},
 		error: function(erro)
 		{

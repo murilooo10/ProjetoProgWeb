@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ArrayOfTcCompNfse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<User>
+<Login>carol</Login>
+<Senha>123</Senha>
+</User>
+</ArrayOfTcCompNfse>

@@ -1,23 +1,25 @@
 <?php
 
 
-	$xml_string = file_get_contents("../XML/Teste.xml");
+$array = glob('../XML/Mensagens_Recebidas/*.xml');
+
+
+for ($j=0; $j< sizeof($array); $j++)
+{
+
+	$xml_string = file_get_contents($array[$j]);
 
 	$xml_objeto = simplexml_load_string($xml_string);
-
-
-	 
-	$retorno = [];
-	for($i=0; $i < sizeof($xml_objeto->Mensagens->MensagensRecebidas->msg); $i++)
-	{
+	
+		$retorno[$j] ["titulo"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->titulo);
+		$retorno[$j] ["remetente"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->remetente);
+		$retorno[$j] ["corpoMensagem"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->corpoMensagem);
 		
-		$retorno[$i] ["titulo"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg[$i]->titulo);
-		$retorno[$i] ["remetente"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg[$i]->remetente);
-		$retorno[$i] ["corpoMensagem"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg[$i]->corpoMensagem);
-		
-	}
+	
 
 	
-	echo json_encode($retorno);
+}
 
+	echo json_encode($retorno);
 ?>
+

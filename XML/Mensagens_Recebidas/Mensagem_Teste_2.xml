@@ -8,26 +8,15 @@
 	<MensagensRecebidas>
 		<msg> 
 			<titulo>
-				Recebida 2
+				Mensagem Teste 2
 			</titulo>
 			<remetente>
-				Recebida 2
+				Programação Web
 			</remetente>
 			<corpoMensagem>
-				Recebida 2
+				Essa mensagem é um teste para listar os email no trabalho
 			</corpoMensagem>
-		</msg>
-		<msg> 
-			<titulo>
-				Recebida 3
-			</titulo>
-			<remetente>
-				Recebida 3
-			</remetente>
-			<corpoMensagem>
-				Recebida 3
-			</corpoMensagem>
-		</msg>		
+		</msg>	
 	</MensagensRecebidas>	
 </Mensagens>
 </ArrayOfTcCompNfse>

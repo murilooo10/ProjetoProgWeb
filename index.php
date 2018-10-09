@@ -6,9 +6,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/login.css">
 
-    <script type="text/javascript" src="JS/jquery.js"></script>
-
-    <script type="text/javascript" src="JS/index.js"></script>
+    
 </head>
 
 <body>
@@ -17,7 +15,11 @@
         <input type="text"  id="tLogin" placeholder="Login"><br>
         <input type="password"  id="tPassword" placeholder="Senha"><br>
         <input type="button" id="bLogar" value="Entrar">
+        <a href="Paginas/Cadastro_Usuario.html">Cadastrar</a>
     </div>
 </body>
+    <!-- javaScript -->
 
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/Login.js"></script>
 </html>
