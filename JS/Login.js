@@ -1,5 +1,14 @@
 $(document).ready(function(){
+
+	
+
 	$("#bLogar").click(function (){	
+		// criação da sessão do usuario logado.
+		
+		var user = $("#tLogin").val();
+		window.sessionStorage.setItem("user",user);
+		
+
 
 		$.ajax({
 		type:"POST",
@@ -13,6 +22,8 @@ $(document).ready(function(){
 		
 			if (retorno == "valido")
 			{
+				 
+				
 				window.location.href="paginas/CaixaEntrada.html?usuario=";
 			}
 			else 

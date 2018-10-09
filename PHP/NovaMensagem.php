@@ -4,13 +4,14 @@ $destinatario = $_POST['Destinatario'];
 $cc = $_POST['Cc'];
 $assunto = $_POST['Assunto'];
 $mensagem = $_POST['Mensagem'];
+$user_logado = $_POST["usuario"];
 
 if (session_status() != PHP_SESSION_ACTIVE)
 {
     session_start();
 }
 
-$usuario = "brunoo";
+$usuario = $user_logado;
 
 $dom = new DOMDocument("1.0", "ISO-8859-1");
 

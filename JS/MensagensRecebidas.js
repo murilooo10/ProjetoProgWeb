@@ -1,4 +1,9 @@
 $(document).ready(function (){
+
+	var user = window.sessionStorage.getItem("user");
+	
+	console.log(user);
+
 	$.ajax({
 			type:"POST",
 			dataType:"json",
@@ -15,4 +20,14 @@ $(document).ready(function (){
 				}
 			}
 	});
+
+
+		$("#logout").click(function (){
+
+			window.sessionStorage.removeItem("user");
+
+			window.location.href="../index.php";
+
+		});
+
 });
