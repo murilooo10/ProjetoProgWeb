@@ -8,12 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/caixaEntrada.css">
 	<script type="text/javascript" src="../JS/jquery.js"></script>
 	<script type ="text/javascript" src="../JS/MensagensEnviadas.js"></script>
-	<script type ="text/javascript" src="../JS/MensagensRecebidas.js"></script>
+    <script type ="text/javascript" src="../JS/MensagensRecebidas.js"></script>
+    <script type ="text/javascript" src="../JS/BuscaAssunto.js"></script>
 
 
 </head>
 
 <body>
+
+    <input type="text" id="busca" placeholder="Buscar por Assunto"> <input type="button" id="buscar" value="Buscar"><input type="button" id="limpar" value="Limpar Filtro">
 		<table id="tabelaMensagem">
 			<tr>
 				<td id="titulos"></td>
@@ -30,15 +33,8 @@
         </tr>
     </table>
     -->
+    
 
-    <table id="tabelaMensagem">
-        <tr>
-            <td id="titulos"></td>
-            <td id="remetente"></td>
-            <td id="corpoMensagem"></td>
-        </tr>
-
-    </table>
 
     <input type="button" id="logout" value="Logout">
    <a href="NovaMensagem.html"><input type="button" id="logout" value="Nova Mensagem">  </a>

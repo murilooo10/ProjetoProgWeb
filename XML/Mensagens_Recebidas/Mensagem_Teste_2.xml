@@ -6,7 +6,10 @@
 </Users>
 <Mensagens> 
 	<MensagensRecebidas>
-		<msg> 
+		<msg>
+			<user>
+				carol
+			</user> 
 			<titulo>
 				Mensagem Teste 2
 			</titulo>
