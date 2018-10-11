@@ -1,4 +1,0 @@
-1- Implementar o retorno das mensagens enviadas.
-2- Implementar o retorno das mensagens enviadas por usuario.
-
-3 - Implementar a exclusão de mensagem, de acordo com a expecificação do Trabalho.

@@ -3,7 +3,7 @@
 $assunto = $_POST["assunto"];
 
 
-$array = glob('../XML/Mensagens_Recebidas/*.xml');
+$array = glob('../XML/MensagensRecebidas/*.xml');
 
 $i =0;
 for ($j=0; $j< sizeof($array); $j++)
@@ -13,7 +13,7 @@ for ($j=0; $j< sizeof($array); $j++)
 
 	$xml_objeto = simplexml_load_string($xml_string);
     
-        $assuntoTemp = $xml_objeto->Mensagens->MensagensRecebidas->msg->titulo;
+        $assuntoTemp = $xml_objeto->assunto;
 
 
         $assuntoTemp = str_replace(" ", "", $assuntoTemp);
@@ -24,9 +24,9 @@ for ($j=0; $j< sizeof($array); $j++)
         {
             
 
-            $retorno[$i] ["titulo"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->titulo);
-	        $retorno[$i] ["remetente"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->remetente);
-		    $retorno[$i] ["corpoMensagem"] = ($xml_objeto->Mensagens->MensagensRecebidas->msg->corpoMensagem);
+            $retorno[$i] ["assunto"] = ($xml_objeto->assunto);
+	        $retorno[$i] ["remetente"] = ($xml_objeto->remetente);
+		    $retorno[$i] ["msg"] = ($xml_objeto->msg);
             
             $i++;
         }	

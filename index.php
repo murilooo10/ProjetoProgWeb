@@ -5,19 +5,18 @@
     <title>Index</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/login.css">
-
-    
 </head>
 
 <body>
     <div id="caixaLogin">
-        <img src="images/login.png" id="image" />
+        <img src="imagens/login.png" id="image" />
         <input type="text"  id="tLogin" placeholder="Login"><br>
         <input type="password"  id="tPassword" placeholder="Senha"><br>
         <input type="button" id="bLogar" value="Entrar">
-        <a href="Paginas/Cadastro_Usuario.html">Cadastrar</a>
+        <a href="PAGINAS/newUser.html">Cadastrar</a>
     </div>
 </body>
+
     <!-- javaScript -->
 
     <script type="text/javascript" src="JS/jquery.js"></script>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Nova Mensagem</title>
-	
+    <title>Index</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/caixaEntrada.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
-<body>
-	<input type="text" id="Destinatario" placeholder="Destinatario">
-	<input type="text" id="Cc" placeholder="Cc">
-	<input type="text" id="Assunto" placeholder="Assunto">
-	<input type="text" id="Mensagem" placeholder="Mensagem">
-	<input type="text" id="user" placeholder="Login de Usuario">
-	<input type="button" id="Enviar" value="Enviar">
-	<input type="button" id="voltar" value="Voltar">
 
-	<!-- JavaScript-->
 
-	<script type="text/javascript" src="../JS/jquery.js"></script>
-	<script type="text/javascript" src="../JS/NovaMensagem.js"></script>
+
+<body>    
+   <input type="text" id="remetente" placeholder="Endereço de Email"><br>
+   <input type="text" id="assunto" placeholder="Assunto"><br>
+   <input type="text" id="msg" placeholder="Mensagem"><br>
+   <button id="enviar">Enviar</button>
+
 </body>
+
+    <!-- javaScript -->
+
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script type="text/javascript" src="../JS/novaMensagem.js"></script>
 </html>

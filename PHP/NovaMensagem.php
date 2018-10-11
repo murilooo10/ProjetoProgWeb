@@ -1,46 +1,61 @@
 <?php
 
-$destinatario = $_POST['Destinatario'];
-$cc = $_POST['Cc'];
-$assunto = $_POST['Assunto'];
-$mensagem = $_POST['Mensagem'];
-$user_logado = $_POST["usuario"];
+$remetente = $_POST['remetente'];
+$assunto = $_POST['assunto'];
+$msg = $_POST['msg'];
+$user = $_POST['usuario'];
 
-if (session_status() != PHP_SESSION_ACTIVE)
-{
-    session_start();
+
+    novaMensagem($remetente,$assunto,$msg,$user);
+    echo json_encode ("Mensagem enviada");
+
+
+
+ // -------------FUNÇÕES--------------------------------   
+
+
+function novaMensagem($remetente,$assunto,$msg,$user){
+
+    $dom = new DOMDocument("1.0", "ISO-8859-1");
+
+    #retirar os espacos em branco
+    $dom->preserveWhiteSpace = false; 
+
+
+    $raiz = $dom->createElement("mensagem");
+
+    $user = $dom->createElement("usuario",$user);
+
+    $noMsg = $dom->createElement("msg",$msg); 
+
+    $noAssunto = $dom->createElement("assunto",$assunto);
+
+    $noRemetente = $dom->createElement("remetente",$remetente); 
+    
+
+    $raiz ->appendChild($user); 
+    $raiz ->appendChild($noRemetente); 
+    $raiz ->appendChild($noAssunto); 
+    $raiz ->appendChild($noMsg); 
+  
+    $dom-> appendChild($raiz); 
+
+    $data = datee();
+
+    $dom->save("../XML/MensagensEnviadas/".$data.".xml"); // save do XML
+
 }
 
-$usuario = $user_logado;
 
-$dom = new DOMDocument("1.0", "ISO-8859-1");
+function datee(){
 
-#retirar os espacos em branco
-$dom->preserveWhiteSpace = false; // retirando os espaços
+    $data = date("H:i");
+    $partes = explode(":", $data);
+    $hora = $partes[0];
+    $minuto = $partes[1];
+ 
 
-$raiz = $dom->createElement("mensagens"); // criando o nó principal
-
-$user = $dom->createElement("usuario",$usuario);
-
-$msg = $dom->createElement("msg"); // criaçao de nó 
-
-$noAssunto = $dom->createElement("assunto",$assunto); // criaçao de nó 
-$noMensagem = $dom->createElement("corpoMensagem",$mensagem); // criaçao de nó 
-$noCc = $dom->createElement("copia",$cc); // criaçao de nó 
-$noDestinatario = $dom->createElement("distinatario",$destinatario); // criaçao de nó 
-
-$msg ->appendChild($noDestinatario); // append no nó msg
-$msg ->appendChild($noAssunto); // append no nó msg
-$msg ->appendChild($noCc); // append no nó msg
-$msg ->appendChild($noMensagem); // append no nó msg
-$msg ->appendChild($user); // append no nó msg
-
-$raiz->appendChild($msg); // append no nó raiz
-$dom-> appendChild($raiz); // append no documento
-
-
-
-
-$dom->save("../XML/Mensagens_Enviadas/".$assunto.".xml"); // save do XML
+    return $data = $hora."-".$minuto;
+}
 
 ?>

@@ -4,9 +4,7 @@ $(document).ready(function (){
 
         console.log("entrei");
         
-        var assunto_Recebido = trim($("#busca").val());
-
-        console.log(assunto_Recebido);
+        var assunto_Recebido = trim($("#campoBusca").val());
         
         $.ajax({
 			type:"POST",
@@ -16,17 +14,16 @@ $(document).ready(function (){
 			success: function(retorno)
 			{		
                 
-				$("#titulos").html(""); //limpeza dos campos das mensagens enviadas.
+				$("#assunto").html(""); //limpeza dos campos das mensagens enviadas.
 				$("#remetente").html("");//limpeza dos campos das mensagens enviadas.
-				$("#corpoMensagem").html("");	//limpeza dos campos das mensagens enviadas.
+				$("#msg").html("");	//limpeza dos campos das mensagens enviadas.
 				
 				for(var i=0; i<retorno.length;i++)
-				{					
-					
-					$("#titulos").append("<br>"+retorno [i].titulo[0]+"<br>");
+				{										
+					$("#assunto").append("<br>"+retorno [i].assunto[0]+"<br>");
 					$("#remetente").append("<br>"+retorno [i].remetente[0]+"<br>");
-					$("#corpoMensagem").append("<br>"+retorno [i].corpoMensagem[0]+"<br>");
-				}
+					$("#msg").append("<br>"+retorno [i].msg[0]+"<br>");
+				}   
             },
             error: function(erro)
             {
@@ -41,6 +38,7 @@ $(document).ready(function (){
 
     });
     
+//----------------- funções ------------//
 
     function trim(vlr) {
 

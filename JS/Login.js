@@ -1,42 +1,29 @@
-$(document).ready(function(){
+$(document).ready(function (){
 
-	
+    
 
-	$("#bLogar").click(function (){	
-		// criação da sessão do usuario logado.
-		
-		var user = $("#tLogin").val();
+
+    $("#bLogar").click(function (){    
+        var login = $("#tLogin").val();
+        var senha = $("#tPassword").val();
+
+        // criando a sessão de usuario
+        var user = $("#tLogin").val();
 		window.sessionStorage.setItem("user",user);
-		
+        
+        $.ajax({
+            type:"POST",
+            dataType:"json",
+            url:"PHP/login.php",
+            data:{user:login,password:senha},
+            success: function(retorno){
+                console.log(retorno);
+                window.location.href = "PAGINAS/caixaEntrada.html";
+            },
+            error:function(erro){
 
-
-		$.ajax({
-		type:"POST",
-		dataType:"json",
-		url:"PHP/Login.php",
-		data:{email:$("#tLogin").val(),senha:$("#tPassword").val()},
-		success:function(retorno)
-		{
-			
-			console.log(retorno);
-		
-			if (retorno == "valido")
-			{
-				 
-				
-				window.location.href="paginas/CaixaEntrada.html?usuario=";
-			}
-			else 
-			{
-				alert("Usuario errado");
-			}
-		},
-		error: function(erro)
-		{
-			console.log(erro);
-		}
-
-		});
-	});
+                console.log(erro);
+            }   
+        });
+    });
 });
-

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mensagem>
+    <remetente>
+        brunoconke@gmail.com
+    </remetente>
+    <assunto>
+        Mensagem Teste 4
+    </assunto>
+    <msg>
+        Essa é a mensagem teste para os emails.
+    </msg>
+</mensagem>

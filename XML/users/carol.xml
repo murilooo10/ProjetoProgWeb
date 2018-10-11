@@ -1,5 +1,2 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<User>
-<Login>carol</Login>
-<Senha>123</Senha>
-</User>
+<User><Login>carol</Login><Senha>1234</Senha></User>

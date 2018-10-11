@@ -1,0 +1,9 @@
+.div_teste{
+    width:200px;
+    height:100px;
+    background:#f00;
+    position:absolute;
+    z-index:100;
+    top:30%;
+    left:40;
+    }

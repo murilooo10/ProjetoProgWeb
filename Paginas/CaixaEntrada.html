@@ -2,47 +2,48 @@
 <html>
 
 <head>
-
-	<title>Email</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../CSS/caixaEntrada.css">
-	<script type="text/javascript" src="../JS/jquery.js"></script>
-	<script type ="text/javascript" src="../JS/MensagensEnviadas.js"></script>
-    <script type ="text/javascript" src="../JS/MensagensRecebidas.js"></script>
-    <script type ="text/javascript" src="../JS/BuscaAssunto.js"></script>
-
-
+    <title>Index</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/caixaEntrada.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
-<body>
-
-    <input type="text" id="busca" placeholder="Buscar por Assunto"> <input type="button" id="buscar" value="Buscar"><input type="button" id="limpar" value="Limpar Filtro">
-		<table id="tabelaMensagem">
-			<tr>
-				<td id="titulos"></td>
-				<td id="remetente"></td>
-				<td id="corpoMensagem"></td>
-			</tr>
-		</table>
-
-
-   <!-- <table id="cabecalho" cellspacing>
-        <tr>
-            <td style="width: 85px"><img src="../images/icone_menu.png" id="image_menu" /></td>
-            <td><input type="text" placeholder="Pesquisar" id="tPesquisar"></td>
-        </tr>
-    </table>
-    -->
+<header id="cabecario">
+    <img src="../imagens/icone_menu.png" height="40px" width="numero_largura">
+    <input type="text" id="campoBusca" placeholder="Buscar Email">
+    <button id="buscar">Buscar</button>
+    <button id="logout">Logout</button>
+    <a href="novaMensagem.html"><button id="novaMensagem">Nova Mensagem</button></a>
+    <button id="mensagensEnviadas">Mensagens Enviadas</button>
+    <button id="mensagensExcluidas">Itens Excluidos</button>
     
+</header>
 
+<body>    
+    <div id="mensagens">
+        <table border="1">
+            <thead>
+            <tr>
+                <th colspan="4" id="pasta">CAIXA DE ENTRADA</th>
+            </tr>
+            <tr>
+                <th>Remetente</th>
+                <th>Assunto</th>
+                <th>Mensagem</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    <input type="button" id="logout" value="Logout">
-   <a href="NovaMensagem.html"><input type="button" id="logout" value="Nova Mensagem">  </a>
-
-
-    </div>
-
-
+        </tbody>
+        </table>
+    </div>    
 </body>
 
+    <!-- javaScript -->
+
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script type="text/javascript" src="../JS/caixaEntrada.js"></script>
+    <script type="text/javascript" src="../JS/BuscaAssuntos.js"></script>
+    <script type="text/javascript" src="../JS/apagarEmail.js"></script>
 </html>
