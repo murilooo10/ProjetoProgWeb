@@ -1,52 +1,40 @@
 $(document).ready(function (){ 
-    
-    $("#buscar").click(function (){
 
-        console.log("entrei");
+    $("#campoBusca").keyup(function (){
+
+        var mensagens = document.querySelectorAll(".mensagem");
         
-        var assunto_Recebido = trim($("#campoBusca").val());
+        console.log(mensagens);
         
-        $.ajax({
-			type:"POST",
-			dataType:"json",
-            url: "../PHP/BuscaAssunto.php",
-            data:{assunto:assunto_Recebido},
-			success: function(retorno)
-			{		
-                
-				$("#assunto").html(""); //limpeza dos campos das mensagens enviadas.
-				$("#remetente").html("");//limpeza dos campos das mensagens enviadas.
-				$("#msg").html("");	//limpeza dos campos das mensagens enviadas.
-				
-				for(var i=0; i<retorno.length;i++)
-				{										
-					$("#assunto").append("<br>"+retorno [i].assunto[0]+"<br>");
-					$("#remetente").append("<br>"+retorno [i].remetente[0]+"<br>");
-					$("#msg").append("<br>"+retorno [i].msg[0]+"<br>");
-				}   
-            },
-            error: function(erro)
+        
+        var assunto_Recebido = $("#campoBusca").val();
+
+        if (assunto_Recebido.length > 0)
+        {
+
+        
+            for(var i=0; i<mensagens.length; i++)
             {
-                alert("Mensagem não encontrada");                
+                mensagem = mensagens[i];
+                var assuntotemp = mensagem.querySelector("#assunto");
+                var assunto = assuntotemp.textContent;
+                var expresssao = new RegExp(this.value,"i");
+                if(!expresssao.test(assunto.trim())){
+                    mensagem.classList.add("invisible");
+                }else{        
+                    mensagem.classList.remove("invisible");
+                }
             }
-		});    
-    });
-
-    $("#limpar").click(function(){
-
-        location.reload();
-
-    });
-    
-//----------------- funções ------------//
-
-    function trim(vlr) {
-
-        while(vlr.indexOf(" ") != -1)
-        vlr = vlr.replace(" ", "");
-         return vlr;
         }
+        else{
 
+            for (var i=0; i<mensagens.length;i++)
+            {
+                var mensagem = mensagens[i];
 
-
+                mensagem.classList.remove("invisible");
+            }
+        }    
+    });
 });
+  

@@ -1,11 +1,11 @@
 $(document).ready(function (){
 
     var user = window.sessionStorage.getItem("user");
-    console.log(user);
+  
     
 
         carregarMensagensRecebidas();
- 
+       
     
 
     $("#logout").click(function(){
@@ -144,10 +144,10 @@ $(document).ready(function (){
                 for(var i=0; i<retorno.length;i++)
 				{
 
-                    var html = "<tr>"+
-									"<td>"+retorno[i].titulo[0]+"</td>"+
-									"<td>"+retorno[i].remetente[0]+"</td>"+
-									"<td>"+retorno[i].corpoMensagem[0]+"</td>"+
+                    var html = "<tr class='mensagem'>"+									
+                                    "<td id='remetente'>"+retorno[i].remetente[0]+"</td>"+
+                                    "<td id='assunto'>"+retorno[i].titulo[0].trim()+"</td>"+
+									"<td id='msg'>"+retorno[i].corpoMensagem[0]+"</td>"+
 									"<td>"+"<button class='btnApagar'value='"+retorno[i].nomeArquivo+"'>"+'Apagar'+"</button>"+ 
                                     "</tr>";
                                     
