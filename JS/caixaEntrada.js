@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-    var user = window.sessionStorage.getItem("user");
+    let user = window.sessionStorage.getItem("user");
   
     
 
@@ -53,7 +53,7 @@ $(document).ready(function (){
 					if (retornoFull == user)
 					{
 
-                        var html = "<tr>"+									
+                        let html = "<tr>"+									
                                     "<td>"+retorno[i].remetente[0]+"</td>"+
                                     "<td>"+retorno[i].assunto[0]+"</td>"+
 									"<td>"+retorno[i].msg[0]+"</td>"+
@@ -79,9 +79,9 @@ $(document).ready(function (){
 
     function trim(vlr) {
 
-        while(vlr.indexOf(" ") != -1)
-        vlr = vlr.replace(" ", "");
-         return vlr;
+        while(let.indexOf(" ") != -1)
+        let = let.replace(" ", "");
+         return let;
         }
 
 
@@ -102,10 +102,10 @@ $(document).ready(function (){
                 
                 $("#pasta").html("Mensagens Exluidas");
                 
-                for(var i=0; i<retorno.length;i++)
+                for(let i=0; i<retorno.length;i++)
 				{
                     
-                    var html = "<tr>"+
+                    let html = "<tr>"+
 									"<td>"+retorno[i].assunto[0]+"</td>"+
 									"<td>"+retorno[i].remetente[0]+"</td>"+
 									"<td>"+retorno[i].msg[0]+"</td>"+
@@ -121,7 +121,7 @@ $(document).ready(function (){
            },
             error:function(erro){
 
-                var html = "<tr><td colspan='3'>"+"Você não tem mensagens"+"</td></tr>";
+                let html = "<tr><td colspan='3'>"+"Você não tem mensagens"+"</td></tr>";
                 $("tbody").append(html);
                 console.log(erro);
                 
@@ -141,7 +141,7 @@ $(document).ready(function (){
             url:"../PHP/caixaEntrada.php",
             success: function(retorno){
                 $("tbody").html(""); 
-                for(var i=0; i<retorno.length;i++)
+                for(let i=0; i<retorno.length;i++)
 				{
 
                     var html = "<tr class='mensagem'>"+									
@@ -157,7 +157,7 @@ $(document).ready(function (){
            },
             error:function(erro){
 
-                var html = "<tr><td colspan='4'>"+"Você não tem mensagens"+"</td></tr>";
+                let html = "<tr><td colspan='4'>"+"Você não tem mensagens"+"</td></tr>";
                 $("tbody").append(html);
                 console.log(erro);
                 

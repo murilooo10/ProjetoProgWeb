@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-    var user = window.sessionStorage.getItem("user");
+    let user = window.sessionStorage.getItem("user");
     console.log(user);
     $("#enviar").click(function (){
 
