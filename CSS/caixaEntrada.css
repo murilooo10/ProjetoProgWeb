@@ -1,12 +1,117 @@
-#mensagens{
-
-    margin-left: 50%;
-    
-
-}
-.invisible{
-
-    display: none;
- 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
 }
 
+#menuLateral {
+    margin-left: 0%;
+    width: 250px;
+    top: 80px;
+    position: absolute;
+}
+
+#linhas {
+    padding-top: 10px;
+    position: center;
+    padding-right: 100px;
+}
+
+#linhaCentro {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 100px;
+    position: center;
+}
+
+#head {
+    background-color: blue;
+    height: 50px;
+}
+
+#pesquisa {
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+#cabecalho {
+    background-color: #3590C4;
+    margin: none;
+    width: 100%;
+}
+
+#image_menu {
+    width: 40%;
+    margin-right: 30px;
+}
+
+#tPesquisar {
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+#tPesquisar::placeholder {
+    padding: 3px;
+}
+
+#tabelaMensagem {
+    width: 100%;
+}
+
+#novaMensagem {
+    border: 1px solid rgb(243, 243, 243);
+    background: rgb(243, 243, 243);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#novaMensagem:hover {
+    background: rgb(220, 220, 220);
+}
+
+.menupar {
+    background-color: rgb(224, 241, 248);
+}
+
+.menupar:hover {
+    background-color: rgb(200, 227, 224);
+}
+
+.menuimpar {
+    background-color: rgb(207, 236, 244);
+}
+
+.menuimpar:hover {
+    background-color: rgb(200, 227, 224);
+}
+
+#menuLateral button {
+    margin: 0;
+    border: 0;
+    width: 250px;
+    cursor: pointer;
+}
+
+#menuLateral button img {
+    float: left;
+}
+
+#fundoMensagem {
+    background: white;
+    height: 700px;
+}
+
+.mensagens td {
+    border-bottom: 1px solid rgb(243, 243, 243);
+    text-align: center;
+    height: 45px;
+}
+
+.mensagens:hover {
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+}
