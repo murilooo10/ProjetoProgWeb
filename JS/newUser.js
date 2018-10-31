@@ -1,8 +1,8 @@
 $(document).ready(function (){
 
     $("#bCadastrar").click(function (){
-      let login = $("#tLogin").val();
-      let password = $("#tPassword").val();
+      var login = $("#tLogin").val();
+      var password = $("#tPassword").val();
      
         $.ajax({
             type:"POST",

@@ -4,11 +4,11 @@ $(document).ready(function (){
 
 
     $("#bLogar").click(function (){    
-        let login = $("#tLogin").val();
-        let senha = $("#tPassword").val();
+        var login = $("#tLogin").val();
+        var senha = $("#tPassword").val();
 
         // criando a sessão de usuario
-        let user = $("#tLogin").val();
+        var user = $("#tLogin").val();
 		window.sessionStorage.setItem("user",user);
         
         $.ajax({
