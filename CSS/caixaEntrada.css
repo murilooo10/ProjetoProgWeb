@@ -1,12 +1,143 @@
-#mensagens{
-
-    margin-left: 50%;
-    
-
-}
-.invisible{
-
-    display: none;
- 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
 }
 
+#menuLateral {
+    margin-left: 0%;
+    width: 250px;
+    top: 110px;
+    position: absolute;
+}
+
+#linhas {
+    padding-top: 10px;
+    position: center;
+    padding-right: 100px;
+}
+
+#linhaCentro {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 100px;
+    position: center;
+}
+
+#head {
+    background-color: blue;
+    height: 50px;
+}
+
+#pesquisa {
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+#cabecario {
+    background-color: #3590C4;
+    margin: none;
+    width: 100%;
+}
+
+#image_menu {
+    width: 40%;
+    margin-right: 30px;
+}
+
+#campoBusca {
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+#campoBusca::placeholder {
+    padding: 3px;
+}
+
+#tabelaMensagem {
+    width: 100%;
+}
+
+#novaMensagem {
+    border: 1px solid rgb(243, 243, 243);
+    background: rgb(243, 243, 243);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#novaMensagem:hover {
+    background: rgb(220, 220, 220);
+}
+
+#buscar {
+    border: 1px solid #3590C4;
+    background: #3590C4;
+    width: 3%;
+    cursor: pointer;
+}
+
+.menupar {
+    background-color: rgb(224, 241, 248);
+}
+
+.menupar:hover {
+    background-color: rgb(200, 227, 224);
+}
+
+.menuimpar {
+    background-color: rgb(207, 236, 244);
+}
+
+.menuimpar:hover {
+    background-color: rgb(200, 227, 224);
+}
+
+#menuLateral button {
+    margin: 0;
+    border: 0;
+    width: 250px;
+    cursor: pointer;
+}
+
+#menuLateral button img {
+    float: left;
+}
+
+#fundoMensagem {
+    background: white;
+    height: 700px;
+}
+
+.mensagem td {
+    border-bottom: 1px solid rgb(243, 243, 243);
+    text-align: center;
+    height: 45px;
+}
+
+.mensagem:hover {
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+}
+
+#mensagens {
+    width: 100%;
+}
+
+#mensagens div table thead tr th {
+    border-left: 1px solid lightgray;
+    padding: 10px;
+}
+
+#logout {
+    border: 1px solid #3590C4;
+    background: #3590C4;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
