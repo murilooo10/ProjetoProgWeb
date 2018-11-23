@@ -1,16 +1,19 @@
-<?php
-<!DOCTYPE html>
 <html>
 
 <head>
     <title>Index</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../CSS/caixaEntrada.css">
+	<script type="text/javascript" src="../JS/jquery.js"></script>
+<script type="text/javascript" src="../JS/CaixaEntrada.js"></script>
+<script type="text/javascript" src="../JS/BuscaAssuntos.js"></script>
+<script type="text/javascript" src="../JS/apagarEmail.js"></script>
     <!--<link rel="stylesheet" href="../CSS/login.css">-->
 </head>
 
-<header id="cabecario">
-    <table>
+
+<body>
+    <table id="cabecario">
         <td><img src="../imagens/icone_menu.png" height="40px" width="numero_largura"></td>
         <td>
             <input type="text" id="campoBusca" placeholder="Buscar Email">
@@ -20,12 +23,6 @@
         </td>
         <td><button id="logout"><b>Logout</b></button></td>
     </table>
-    <!--<button id="mensagensEnviadas">Mensagens Enviadas</button>
-    <button id="mensagensExcluidas">Itens Excluidos</button>-->
-
-</header>
-
-<body>
     <div>
         <table id="bodyEmail" cellspacing="0">
             <tr>
@@ -55,7 +52,7 @@
                                     <th style="width: 10%">Ação</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="emails">
 
                             </tbody>
                         </table>
@@ -65,32 +62,10 @@
             </tr>
         </table>
     </div>
-    <!--     <div id="mensagens">
-        <table cellspacin="0">
-            <thead>
-                <tr>
-                    <th>Caixa de Entrada</th>
-                </tr>
-                <tr>
-                    <th>Remetente</th>
-                    <th>Assunto</th>
-                    <th>Mensagem</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </div> -->
 </body>
 
 <!-- javaScript -->
 
-<script type="text/javascript" src="../JS/jquery.js"></script>
-<script type="text/javascript" src="../JS/caixaEntrada.js"></script>
-<script type="text/javascript" src="../JS/BuscaAssuntos.js"></script>
-<script type="text/javascript" src="../JS/apagarEmail.js"></script>
+
 
 </html>
-?php>

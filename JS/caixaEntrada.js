@@ -37,7 +37,7 @@ $(document).ready(function (){
             data:{usuario:user},
             success: function(retorno){
 
-                $("tbody").html(""); 
+                $("#emails").html(""); 
 				
 
                 for(var i=0; i<retorno.length;i++)
@@ -61,7 +61,7 @@ $(document).ready(function (){
                                     "</tr>";
                                     
                                   
-                                    $("tbody").append(html);
+                                    $("#emails").append(html);
 
                         
 					}
@@ -98,7 +98,7 @@ $(document).ready(function (){
             dataType:"json",
             url:"../PHP/mensagensExcluidas.php",
             success: function(retorno){
-                $("tbody").html(""); 
+                $("#emails").html(""); 
                 
                 $("#pasta").html("Mensagens Exluidas");
                 
@@ -113,7 +113,7 @@ $(document).ready(function (){
                                     "</tr>";
                                     
                                   
-                                    $("tbody").append(html);
+                                    $("#emails").append(html);
                                     
                 }
                 
@@ -122,7 +122,7 @@ $(document).ready(function (){
             error:function(erro){
 
                 var html = "<tr><td colspan='3'>"+"Você não tem mensagens"+"</td></tr>";
-                $("tbody").append(html);
+                $("#emails").append(html);
                 console.log(erro);
                 
             }   
@@ -140,7 +140,7 @@ $(document).ready(function (){
             dataType:"json",
             url:"../PHP/caixaEntrada.php",
             success: function(retorno){
-                $("tbody").html(""); 
+                $("#emails").html(""); 
                 for(var i=0; i<retorno.length;i++)
 				{
 
@@ -151,14 +151,14 @@ $(document).ready(function (){
 									"<td>"+"<button class='btnApagar'value='"+retorno[i].nomeArquivo+"'>"+'Apagar'+"</button>"+ 
                                     "</tr>";
                                     
-                                    $("tbody").append(html);
+                                    $("#emails").append(html);
 				}
                 
            },
             error:function(erro){
 
                 var html = "<tr><td colspan='4'>"+"Você não tem mensagens"+"</td></tr>";
-                $("tbody").append(html);
+                $("#emails").append(html);
                 console.log(erro);
                 
             }   
